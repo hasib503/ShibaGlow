@@ -1,4 +1,5 @@
 import React from 'react'
+import ChartPieLabel from './PiChart'
 
 const TokenomicSection: React.FC = () => {
   return (
@@ -10,7 +11,9 @@ const TokenomicSection: React.FC = () => {
         </div>
 
         {/* ========== content area ========== */}
-        <div className="">content</div>
+        <div className="">
+          <ChartPieLabel />
+        </div>
       </div>
     </section>
   )
