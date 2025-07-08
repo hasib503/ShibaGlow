@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavBar from "@/components/global/NavBar/page";
+import Header from "@/components/global/Header/page";
 import Footer from "@/components/global/Footer/page";
 import { Poppins } from "next/font/google";
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     <html lang="en" className={poppins.className}>
       <body>
         <header className="sticky top-0 bg-[#231106] z-30">
-          <NavBar />
+          <Header />
         </header>
         <main>
           {children}
