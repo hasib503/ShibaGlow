@@ -42,7 +42,7 @@ const Timeline = () => {
   return (
     <div className="relative max-w-4xl mx-auto px-4 py-16">
       {/* Vertical line */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[80%] w-[2px] bg-white z-0"></div>
+      <div className="absolute left-8  md:left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[80%] w-[2px] bg-white z-0"></div>
 
       <div className="space-y-16 relative z-10">
         {items.map((item, index) => (
@@ -52,7 +52,7 @@ const Timeline = () => {
           >
             {/* Left content */}
             {item.side === "left" && (
-              <div className="md:w-1/2 md:pr-8 text-right">
+              <div className="w-4/5 ml-10 md:ml-0 md:w-1/2 md:pr-8 text-right z-10">
                 <div className="bg-[#ffcbcb1a] border border-white text-white text-start p-6 rounded-[10px]">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <ul className="text-sm list-disc list-inside space-y-1">
@@ -65,16 +65,16 @@ const Timeline = () => {
             )}
 
             {/* Center Dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
-                <div className="w-5 h-5 bg-yellow-400 rounded-full border-4 border-white shadow-[0_0_16px_0_rgba(253,224,71,0.7)]"></div>
+            <div className="absolute left-4 md:left-1/2 transform  -translate-x-1/2 z-20">
+              <div className="w-5 h-5 bg-yellow-400 rounded-full border-4 border-white shadow-[0_0_16px_0_rgba(253,224,71,0.7)]"></div>
             </div>
 
             {/* Right content */}
             {item.side === "right" && (
-                <div
-                className="md:w-1/2 md:pl-8 md:absolute text-left"
+              <div
+                className="w-4/5 ml-10 md:ml-0 md:w-1/2 md:pl-8 md:absolute text-left"
                 style={{ left: "50%" }}
-                >
+              >
                 <div className="bg-[#ffcbcb1a] border border-white text-white p-6 rounded-[10px]">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <ul className="text-sm list-disc list-inside space-y-1">
