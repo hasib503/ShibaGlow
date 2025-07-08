@@ -18,7 +18,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <header className="sticky top-0 bg-white z-30">
+        <header className="sticky top-0 bg-[#231106] z-30">
           <NavBar />
         </header>
         <main>
