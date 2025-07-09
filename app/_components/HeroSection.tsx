@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import React from "react";
 const Grobold = localFont({ src: "../../font/Grobold.ttf" });
@@ -19,18 +18,18 @@ const HeroSection: React.FC = () => {
             </div>
             <Countdown targetDate="2025-12-31T23:59:59" />
           </div>
-          <div className="lg:order-1">
+          <div className="lg:order-1">         
             <div className={Grobold.className}>
               <h1 className="text-3xl md:text-5xl font-bold font-Grobold ">
                 The Meme Coin for Community, Fun, and Financial Rewards
               </h1>
             </div>
             <p className="my-4 text-xl font-poppins">
-              Fortune Favors the bold : ShibaGlow’s Presale " Turn 100$ into
-              $100,000 with ShibaGlow — The 1000x meme coin that’s about to make
+              Fortune Favors the bold : ShibaGlow&apos;s Presale &apos; Turn 100$ into
+              $100,000 with ShibaGlow — The 1000x meme coin that&apos;s about to make
               you laugh all the way to the bank !
             </p>
-            <span>Connect your wallet to join shibaglow's presale</span> <br />
+            <span>Connect your wallet to join shibaglow&apos;s presale</span> <br />
             <Button className="uppercase p-6 my-2 text-xl font-semibold bg-white hover:bg-slate-100 cursor-pointer text-slate-800">
               Connect Wallet
             </Button>

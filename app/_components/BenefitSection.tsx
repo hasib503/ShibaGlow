@@ -1,4 +1,3 @@
-import { title } from "process";
 import React from "react";
 import { Button } from "@/components/ui/button"
 import imgTwo from "@/public/images/imgTwo.png";
@@ -36,7 +35,7 @@ const BenefitSection: React.FC = () => {
       <div className="container max-w-5xl mx-auto py-16 px-8 lg:px-0">
         <div className="text-center mb-8 ">
           <h2 className="font-[700] text-[32px] md:text-[49px] text-[#94571C]">
-            Holders’ Benefits
+            Holders&apos; Benefits
           </h2>
         </div>
 
@@ -49,7 +48,7 @@ const BenefitSection: React.FC = () => {
                         <p className="">{benefit.description}</p>
                     </div>
                 ))}
-                <p>Connect your wallet to join shibaglow's presale</p>
+                <p>Connect your wallet to join shibaglow&apos;s presale</p>
                 <Button className="bg-slate-50 text-slate-700 cursor-pointer hover:bg-slate-200 uppercase mt-1 font-semibold">Connect Wallet</Button>
                 
             </div>

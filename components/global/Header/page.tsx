@@ -3,6 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger,} from "@/components/ui/sheet";
 import Link from "next/link";
+// import Image from "next/image";
 
 interface MenuItem {
   title: string;
@@ -98,7 +99,8 @@ const Navbar = ({
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="max-h-8" alt={logo.alt} />
+              logo
+              {/* <Image src={logo.src} className="max-h-8" alt={logo.alt} /> */}
             </a>
             <Sheet>
               <SheetTrigger asChild>
