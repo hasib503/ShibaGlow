@@ -47,7 +47,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           className="flex flex-col items-center"
         >
           <div className="text-2xl font-[500] bg-[#602d00] flex items-center justify-center text-white rounded-md p-4 w-14 h-20 shadow-md">{value}</div>
-          <div className="font-semibold capitalize mt-2">{unit}</div>
+          <div className="font-semibold capitalize mt-2 text-sm">{unit}</div>
         </div>
       ))}
     </div>
