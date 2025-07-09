@@ -1,20 +1,7 @@
-import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
-
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Menu } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger,} from "@/components/ui/sheet";
 import Link from "next/link";
 
 interface MenuItem {
@@ -47,33 +34,33 @@ interface NavbarProps {
 
 const Navbar = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
+    url: "/",
+    src: "/",
     alt: "logo",
-    title: "Shadcnblocks.com",
+    title: "title",
   },
   menu = [
-    { title: "Home", url: "#" },
+    { title: "Home", url: "#home" },
 
     {
       title: "Introduction",
-      url: "#",
+      url: "#about",
     },
     {
       title: "Sponsors",
-      url: "#",
+      url: "#sponsors",
     },
     {
       title: "Tokenomics",
-      url: "#",
+      url: "#tokenomics",
     },
     {
       title: "Roadmap",
-      url: "#",
+      url: "#roadmap",
     },
     {
       title: "Holders’ Benefits",
-      url: "#",
+      url: "#benefits",
     },
   ],
 }: NavbarProps) => {
@@ -102,12 +89,12 @@ const Navbar = ({
               ))}
             </div>
 
-            <Button className="bg-white text-black uppercase p-6 rounded">WhitePaper</Button>
+            <Button className="bg-white hover:bg-slate-100 cursor-pointer text-black uppercase p-6 rounded">WhitePaper</Button>
           </div>
         </nav>
 
         {/* Mobile Menu */}
-        <div className="block md:hidden">
+        <div className="block md:hidden mx-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">

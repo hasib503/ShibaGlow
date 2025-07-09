@@ -12,10 +12,33 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-[#3f1d00] text-white ">
       <div className="container max-w-5xl mx-auto py-16 px-10 lg:px-0">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="col-start-2 grid  gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/*========== right section ======= */}
+          <div className=""></div>
+          <div className="w-full lg:order-3 pl-10">
+            <span className="text-[16px] font-bold">Quick Links</span>
+            <div className=" mt-5 pl-6">
+              <ol className="list-disc flex flex-col gap-2 text-[16px] font-[400] text-white">
+                {footerLinks.map((link) => (
+                  <li key={link.name}>
+                    <Link href={link.url} className="block py-1 ">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <p className="text-[10px] whitespace-nowrap mt-4 block">
+              <span className="font-bold">Legal Disclaimer: </span>
+              Cryptocurrency investments involve risk. Please invest
+              responsibly.
+            </p>
+          </div>
+
+          {/*========== left section ======= */}
+          <div className="grid  gap-14 lg:order-2">
             <div className="">
-              <h2 className="font-extrabold text-5xl tracking-wide uppercase">
+              <h2 className="font-extrabold text-2xl md:text-5xl tracking-wide uppercase">
                 ShibaGlow
               </h2>
               <span className="text-xl">Fortune Favors the Bold!</span>
@@ -77,27 +100,6 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/*========== right section ======= */}
-          <div className="md:col-start-3 col-span-1 w-full">
-            <span className="text-[16px] font-bold">Quick Links</span>
-            <div className=" mt-5 pl-6">
-              <ol className="list-disc flex flex-col gap-2 text-[16px] font-[400] text-white">
-                {footerLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link href={link.url} className="block py-1 ">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ol>
-            </div>
-            <p className="text-[10px] whitespace-nowrap mt-4 block">
-              <span className="font-bold">Legal Disclaimer: </span>
-              Cryptocurrency investments involve risk. Please invest
-              responsibly.
-            </p>
           </div>
         </div>
       </div>

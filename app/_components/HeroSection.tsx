@@ -9,11 +9,17 @@ import Countdown from "./Countdown";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="bg-[#231106]  text-white">
-      <div className="container max-w-4xl mx-auto py-16 pt-36">
-        <div className="grid grid-cols-2 gap-12 mb-8">
-          <div className="">
-            <h1 className="text-5xl font-bold font-Grobold ">
+    <section id="home" className="bg-[#231106]  text-white">
+      <div className="container max-w-4xl mx-auto py-16 pt-36 px-4 lg:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-6 mb-8">
+          <div className="lg:order-2 grid gap-4 ">
+            <div className="relative w-full h-64 flex items-center justify-center">
+              <Image src={imgOne} alt="Image One" objectFit="cover" />
+            </div>
+            <Countdown targetDate="2025-12-31T23:59:59" />
+          </div>
+          <div className="lg:order-1">
+            <h1 className="text-3xl md:text-5xl font-bold font-Grobold ">
               The Meme Coin for Community, Fun, and Financial Rewards
             </h1>
             <p className="my-4 text-xl font-poppins">
@@ -25,12 +31,6 @@ const HeroSection: React.FC = () => {
             <Button className="uppercase p-6 my-2 text-xl font-semibold bg-white hover:bg-slate-100 cursor-pointer text-slate-800">
               Connect Wallet
             </Button>
-          </div>
-          <div className="grid gap-4">
-            <div className="relative w-full h-64 flex items-center justify-center">
-              <Image src={imgOne} alt="Image One" objectFit="cover" />
-            </div>
-            <Countdown targetDate="2025-12-31T23:59:59" />
           </div>
         </div>
       </div>

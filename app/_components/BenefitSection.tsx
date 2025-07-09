@@ -32,7 +32,7 @@ const BenefitSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#231106] text-white ">
+    <section id="benefits" className="bg-[#231106] text-white ">
       <div className="container max-w-5xl mx-auto py-16 px-8 lg:px-0">
         <div className="text-center mb-8 ">
           <h2 className="font-[700] text-[32px] md:text-[49px] text-[#94571C]">

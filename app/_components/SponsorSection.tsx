@@ -32,11 +32,11 @@ const sponsorCollection = [
 
 const SponsorSection: React.FC = () => {
   return (
-    <section className="bg-[#3f1d00] text-white ">
+    <section id="sponsors" className="bg-[#3f1d00] text-white ">
       <div className="container max-w-5xl mx-auto py-16">
         <div className="text-center mb-8">
           <h2 className="font-[700] text-[49px] text-[#94571C]">Sponsors</h2>
-          <span className="font-[500] text-[30px]">
+          <span className="font-[500] text-xl lg:text-3xl">
             Trusted by a growing network of sponsors and <br /> partners in the
             crypto space:
           </span>
