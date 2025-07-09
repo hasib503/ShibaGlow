@@ -15,9 +15,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/*========== right section ======= */}
           <div className=""></div>
-          <div className="w-full lg:order-3 pl-10">
+          <div className="w-full lg:order-3 lg:pl-10">
             <span className="text-[16px] font-bold">Quick Links</span>
-            <div className=" mt-5 pl-6">
+            <div className=" mt-5 lg:pl-6">
               <ol className="list-disc flex flex-col gap-2 text-[16px] font-[400] text-white">
                 {footerLinks.map((link) => (
                   <li key={link.name}>
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 ))}
               </ol>
             </div>
-            <p className="text-[10px] whitespace-nowrap mt-4 block">
+            <p className="text-[10px] lg:whitespace-nowrap mt-4 block">
               <span className="font-bold">Legal Disclaimer: </span>
               Cryptocurrency investments involve risk. Please invest
               responsibly.
