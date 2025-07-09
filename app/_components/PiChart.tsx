@@ -1,4 +1,5 @@
 "use client";
+import Example from "@/components/ui/chart";
 import { Pie, PieChart } from "recharts";
 // import {
 //   ChartConfig,
@@ -54,7 +55,10 @@ const ChartPieLabel = () => {
     //     <Pie data={chartData} dataKey="visitors" label nameKey="browser" />
     //   </PieChart>
     // </ChartContainer>
-    <div className="">chart</div>
+    <div className="mx-auto flex justify-center">
+      
+      <Example/>
+    </div>
   );
 };
 

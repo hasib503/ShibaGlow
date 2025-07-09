@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 ))}
               </ol>
             </div>
-            <p className="text-[10px] lg:whitespace-nowrap mt-4 block">
+            <p className="text-[10px] mt-4 block">
               <span className="font-bold">Legal Disclaimer: </span>
               Cryptocurrency investments involve risk. Please invest
               responsibly.

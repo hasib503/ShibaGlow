@@ -82,7 +82,7 @@ const Navbar = ({
                 <Link
                   key={item.title}
                   href={item.url}
-                  className="px-4 py-2 font-medium whitespace-nowrap hover:text-[#94571C]"
+                  className="px-3 py-2 font-medium whitespace-nowrap hover:text-[#94571C]"
                 >
                   {item.title}
                 </Link>
