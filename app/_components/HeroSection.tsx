@@ -2,10 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import React from "react";
-
+const Grobold = localFont({ src: "../../font/Grobold.ttf" });
 import imgOne from "@/public/images/imgOne.png";
 import Image from "next/image";
 import Countdown from "./Countdown";
+import localFont from "next/font/local";
 
 const HeroSection: React.FC = () => {
   return (
@@ -19,9 +20,11 @@ const HeroSection: React.FC = () => {
             <Countdown targetDate="2025-12-31T23:59:59" />
           </div>
           <div className="lg:order-1">
-            <h1 className="text-3xl md:text-5xl font-bold font-Grobold ">
-              The Meme Coin for Community, Fun, and Financial Rewards
-            </h1>
+            <div className={Grobold.className}>
+              <h1 className="text-3xl md:text-5xl font-bold font-Grobold ">
+                The Meme Coin for Community, Fun, and Financial Rewards
+              </h1>
+            </div>
             <p className="my-4 text-xl font-poppins">
               Fortune Favors the bold : ShibaGlow’s Presale " Turn 100$ into
               $100,000 with ShibaGlow — The 1000x meme coin that’s about to make

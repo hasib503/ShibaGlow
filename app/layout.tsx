@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/global/Header/page";
 import Footer from "@/components/global/Footer/page";
@@ -9,8 +8,6 @@ const poppins = Poppins({
   weight: [ "100", "200", "300", "400", "500", "600", "700", "800", "900" ],
   subsets: ["latin"],
 });
-
-// const Grobold = localFont({ src: "../font/Grobold.ttf" });
 
 
 export const metadata: Metadata = {
