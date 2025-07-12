@@ -1,30 +1,32 @@
 import React from "react";
-
-import imgOne from "@/public/images/imgOne.png";
+import sponsorOne from "@/public/images/sponsors/sponsors_01.png";
+import sponsorTwo from "@/public/images/sponsors/sponsors_02.png";
+import sponsorThree from "@/public/images/sponsors/sponsors_03.png";
+import sponsorFour from "@/public/images/sponsors/sponsors_04.png";
 import Image from "next/image";
 
 const sponsorCollection = [
   {
     id: 1,
-    image: imgOne,
+    image: sponsorOne,
     name: "FaZe Banks",
     description: "Youtuber",
   },
   {
     id: 2,
-    image: imgOne,
+    image: sponsorTwo,
     name: "TJR Trades",
     description: "Community member",
   },
   {
     id: 3,
-    image: imgOne,
+    image: sponsorThree,
     name: "TJR Trades",
     description: "Sponsor",
   },
   {
     id: 4,
-    image: imgOne,
+    image: sponsorFour,
     name: "Davinci Jeremie",
     description: "Educator",
   },
@@ -49,7 +51,7 @@ const SponsorSection: React.FC = () => {
               <div key={item.id}
               className="flex flex-col items-center justify-center">
                 <Image
-                  className="w-[258px] h-[367px] opacity-100 border-[3px] border-solid rounded-tl-[1000px] rounded-tr-[500px] rounded-br-[1000px] rounded-bl-[500px] border-[#3f1f00] shadow-[#FFC124] shadow-[0px_0px_16px_0px]"
+                  className="w-[258px] h-[367px]"
                   src={item.image}
                   alt={item.name}
                   blurDataURL={item.image.blurDataURL}
