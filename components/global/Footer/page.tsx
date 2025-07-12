@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             <Image
               src={footer_img}
               alt="Footer Image"
-              className="scale-150"
+              className="xl:scale-150"
             />
 
 
