@@ -41,7 +41,7 @@ const BenefitSection: React.FC = () => {
 
         {/* ========== content area ========== */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="">
+            <div className="order-2 md:order-1">
                 {benefits.map((benefit, index) => (
                     <div key={index} className="mb-5">
                         <h4 className="text-2xl font-semibold text-[#94571C] mb-1">{benefit.title}</h4>
@@ -52,7 +52,7 @@ const BenefitSection: React.FC = () => {
                 <Button className="bg-slate-50 text-slate-700 cursor-pointer hover:bg-slate-200 uppercase mt-1 font-semibold">Connect Wallet</Button>
                 
             </div>
-            <div className="">
+            <div className="order-1 md:order-2">
             <Image src={benefitImg} alt="Benefit Image" blurDataURL={benefitImg.blurDataURL} className="rounded-2xl" />
             </div>
         </div>

@@ -98,38 +98,45 @@ const Navbar = ({
         </nav>
 
         {/* Mobile Menu */}
-        <div className="block md:hidden mx-8">
+        <div className="block md:hidden mx-8 ">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href={logo.url} className="flex items-center gap-2">
-              logo
-              {/* <Image src={logo.src} className="max-h-8" alt={logo.alt} /> */}
-            </a>
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
-                  <Menu className="size-4" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent className="overflow-y-auto">
-                <SheetHeader>
-                  <SheetTitle>
-                    {/* <a href={logo.url} className="flex items-center gap-2">
+            <Image
+              src={Logo}
+              className="h-10 w-10"
+              alt={logo.alt}
+            />
+
+            <div className="flex  gap-2">
+              <Button className="bg-white hover:bg-slate-100 cursor-pointer text-black uppercase p-4 rounded">WhitePaper</Button>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Menu className="size-5" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent className="overflow-y-auto bg-[#602d00]">
+                  <SheetHeader>
+                    <SheetTitle>
+                      {/* <a href={logo.url} className="flex items-center gap-2">
                       <img src={logo.src} className="max-h-8" alt={logo.alt} />
                     </a> */}
-                  </SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col gap-6 p-4">
-                  <Accordion
-                    type="single"
-                    collapsible
-                    className="flex w-full flex-col gap-4"
-                  >
-                    {menu.map((item) => renderMobileMenuItem(item))}
-                  </Accordion>
-                </div>
-              </SheetContent>
-            </Sheet>
+                    </SheetTitle>
+                  </SheetHeader>
+                  <div className="flex flex-col gap-6 p-4 text-white">
+                    <Accordion
+                      type="single"
+                      collapsible
+                      className="flex w-full flex-col gap-4 "
+                    >
+                      {menu.map((item) => renderMobileMenuItem(item))}
+                    </Accordion>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+
+            
           </div>
         </div>
       </div>

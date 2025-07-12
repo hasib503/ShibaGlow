@@ -13,22 +13,23 @@ const footerLinks = [
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#3f1d00] text-white ">
-      <div className="container border max-w-5xl mx-auto py-16 px-10 lg:px-0">
+      <div className="container max-w-5xl mx-auto py-16 px-10 lg:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/*========== right section ======= */}
           <div className="">
             <Image
               src={footer_img}
               alt="Footer Image"
-              className=""
+              className="scale-150"
             />
 
 
           </div>
           <div className="w-full lg:order-3 lg:pl-10">
-            <span className="text-[16px] font-bold">Quick Links</span>
+            <span className="text-[16px] font-bold">Quick Links</span> <br />
+            <span className="text-xl font-normal">Coming soon...</span>
             <div className=" mt-5 lg:pl-6">
-              <ol className="list-disc flex flex-col gap-2 text-[16px] font-[400] text-white">
+              <ol className="list-disc flex flex-col gap-2 text-[16px] pl-6 md:pl-0 font-[400] text-white">
                 {footerLinks.map((link) => (
                   <li key={link.name}>
                     <Link href={link.url} className="block py-1 ">

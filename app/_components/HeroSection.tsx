@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-6 mb-8">
           <div className="lg:order-2 grid gap-4 ">
             <div className="relative w-full h-64 flex items-center justify-center">
-              <Image src={heroImg} className=" -mb-12 scale-125" alt="Image One" objectFit="cover" />
+              <Image src={heroImg} className=" lg:-mb-12 scale-130" alt="Image One" objectFit="cover" />
             </div>
             <Countdown targetDate="2025-12-31T23:59:59" />
           </div>
