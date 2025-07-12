@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 const Grobold = localFont({ src: "../../font/Grobold.ttf" });
-import imgOne from "@/public/images/imgOne.png";
 import heroImg from "@/public/images/hero/hero_img.png";
 import Image from "next/image";
 import Countdown from "./Countdown";
