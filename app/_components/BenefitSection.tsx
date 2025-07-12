@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/ui/button"
-import imgTwo from "@/public/images/imgTwo.png";
 import benefitImg from "@/public/images/benefits/benefits_01.png"
 import Image from "next/image";
 
@@ -54,7 +53,7 @@ const BenefitSection: React.FC = () => {
                 
             </div>
             <div className="">
-                <Image src={benefitImg} alt="Benefit Image" blurDataURL={imgTwo.blurDataURL} className="rounded-2xl" />
+            <Image src={benefitImg} alt="Benefit Image" blurDataURL={benefitImg.blurDataURL} className="rounded-2xl" />
             </div>
         </div>
       </div>

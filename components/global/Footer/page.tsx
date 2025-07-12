@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import footer_img from "@/public/images/footer/footer_img.png";
+import Image from "next/image";
 
 const footerLinks = [
   { name: "Twitter", url: "https://twitter.com" },
@@ -11,10 +13,18 @@ const footerLinks = [
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#3f1d00] text-white ">
-      <div className="container max-w-5xl mx-auto py-16 px-10 lg:px-0">
+      <div className="container border max-w-5xl mx-auto py-16 px-10 lg:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/*========== right section ======= */}
-          <div className=""></div>
+          <div className="">
+            <Image
+              src={footer_img}
+              alt="Footer Image"
+              className=""
+            />
+
+
+          </div>
           <div className="w-full lg:order-3 lg:pl-10">
             <span className="text-[16px] font-bold">Quick Links</span>
             <div className=" mt-5 lg:pl-6">

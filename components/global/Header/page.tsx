@@ -3,7 +3,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger, } from "@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger,} from "@/components/ui/sheet";
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
+import Logo from "@/public/images/logo.png";
 
 interface MenuItem {
   title: string;
@@ -69,16 +70,18 @@ const Navbar = ({
     <section className="py-4">
       <div className="container mx-auto max-w-5xl">
         {/* Desktop Menu */}
-        <nav className="hidden justify-end md:flex">
+        <nav className="hidden justify-end md:flex ">
           <div className="flex items-center gap-6">
             {/* Logo */}
-            {/* <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="max-h-8 border" alt={logo.alt} />
-              <span className="text-lg font-semibold tracking-tighter">
-                {logo.title}
-              </span>
-            </a> */}
-            <div className="flex items-center text-white ">
+            <a href={logo.url} className="flex w-[134px] h-[140px] items-center gap-2">
+              <Image
+                src={Logo}
+                className=""
+                alt={logo.alt}
+              />
+              
+            </a>
+            <div className="flex items-center  text-white ">
               {menu.map((item) => (
                 <Link
                   key={item.title}

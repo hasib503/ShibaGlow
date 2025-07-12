@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 const Grobold = localFont({ src: "../../font/Grobold.ttf" });
 import imgOne from "@/public/images/imgOne.png";
+import heroImg from "@/public/images/hero/hero_img.png";
 import Image from "next/image";
 import Countdown from "./Countdown";
 import localFont from "next/font/local";
@@ -14,14 +15,14 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-6 mb-8">
           <div className="lg:order-2 grid gap-4 ">
             <div className="relative w-full h-64 flex items-center justify-center">
-              <Image src={imgOne} alt="Image One" objectFit="cover" />
+              <Image src={heroImg} className=" -mb-12 scale-125" alt="Image One" objectFit="cover" />
             </div>
             <Countdown targetDate="2025-12-31T23:59:59" />
           </div>
           <div className="lg:order-1">         
             <div className={Grobold.className}>
-              <h1 className="text-3xl md:text-5xl font-bold font-Grobold ">
-                The Meme Coin for Community, Fun, and Financial Rewards
+              <h1 className="text-3xl md:text-[45px] font-bold font-Grobold ">
+                The Meme Coin <br /> for Community, Fun, and Financial Rewards
               </h1>
             </div>
             <p className="my-4 text-xl font-poppins">
