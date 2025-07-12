@@ -54,6 +54,8 @@ const SponsorSection: React.FC = () => {
                   className="w-[258px] h-[367px]"
                   src={item.image}
                   alt={item.name}
+                  height={400}
+                  width={400}
                   blurDataURL={item.image.blurDataURL}
                 />
                 <div className="text-center mt-3">

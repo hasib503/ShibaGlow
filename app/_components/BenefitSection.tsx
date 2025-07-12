@@ -53,7 +53,12 @@ const BenefitSection: React.FC = () => {
                 
             </div>
             <div className="order-1 md:order-2">
-            <Image src={benefitImg} alt="Benefit Image" blurDataURL={benefitImg.blurDataURL} className="rounded-2xl" />
+            <Image src={benefitImg} 
+            alt="Benefit Image" 
+            height={500}
+            width={500}
+
+            blurDataURL={benefitImg.blurDataURL} className="rounded-2xl" />
             </div>
         </div>
       </div>

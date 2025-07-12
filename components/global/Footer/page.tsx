@@ -21,6 +21,8 @@ const Footer: React.FC = () => {
               src={footer_img}
               alt="Footer Image"
               className="xl:scale-150"
+              height={400}
+              width={400}
             />
 
 

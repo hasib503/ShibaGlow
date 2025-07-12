@@ -77,6 +77,8 @@ const Navbar = ({
               <Image
                 src={Logo}
                 className=""
+                height={100}
+                width={100}
                 alt={logo.alt}
               />
               
@@ -105,6 +107,8 @@ const Navbar = ({
               src={Logo}
               className="h-10 w-10"
               alt={logo.alt}
+              height={100}
+              width={100}
             />
 
             <div className="flex  gap-2">

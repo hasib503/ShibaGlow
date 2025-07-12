@@ -22,6 +22,8 @@ const TokenomicSection: React.FC = () => {
         <div className="grid gap-0">
           <Image
             src={tokenomicImage}
+            height={500}
+            width={600}
             alt="Tokenomic Image"
             className="w-full h-auto scale-80"
           />
