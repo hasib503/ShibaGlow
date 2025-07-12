@@ -10,11 +10,11 @@ import localFont from "next/font/local";
 const HeroSection: React.FC = () => {
   return (
     <section id="home" className="bg-[#231106]  text-white">
-      <div className="container max-w-4xl mx-auto py-16 pt-36 px-4 lg:px-0">
+      <div className="container max-w-4xl mx-auto py-16 lg:pt-36 px-4 lg:px-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-6 mb-8">
           <div className="lg:order-2 grid gap-4 ">
             <div className="relative w-full h-64 flex items-center justify-center">
-              <Image src={heroImg} className=" lg:-mb-12 scale-130" alt="Image One" objectFit="cover" />
+              <Image src={heroImg} className=" lg:scale-130" alt="Image One" objectFit="cover" />
             </div>
             <Countdown targetDate="2025-12-31T23:59:59" />
           </div>
